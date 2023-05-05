@@ -20,13 +20,13 @@ class Paraula {
   setParaula(paraula) {
     this.paraula = paraula;
   }
-  setHoritzontal() {
+  setHoritzontal(horitzontal) {
     this.horitzontal = horitzontal;
   }
-  setPosIniacial() {
+  setPosIniacial(posInicial) {
     this.posInicial = posInicial;
   }
-  setDescripcio() {
+  setDescripcio(descripcio) {
     this.descripcio = descripcio;
   }
   pintarcaselles() {
@@ -66,10 +66,10 @@ class Taula {
   getCrucigrama() {
     return this.crucigrama;
   }
-  setDimensions() {
+  setDimensions(dimensions) {
     this.dimensions = dimensions;
   }
-  setCrucigrama() {
+  setCrucigrama(crucigrama) {
     this.crucigrama = crucigrama;
   }
   crearTaulell() {
@@ -109,9 +109,15 @@ class Taula {
     console.log(crucigrama);
   }
 }
-
+//provisional Omplint CRUCIGRAMA
 const crucigrama = [];
-let contestar = new Paraula("contestar", true, "1,5", "blablabla");
+let contestar = new Paraula;
+contestar.setParaula('contestar');
+contestar.setHoritzontal(true);
+contestar.setPosIniacial('1,5');
+contestar.setDescripcio('bklablalblab');
+
+//let contestar = new Paraula("contestar", true, "1,5", "blablabla");
 let tribus = new Paraula("tribus", false, "9,4", "blablabla");
 let veure = new Paraula("veure", true, "3,3", "blablabla");
 let crosta = new Paraula("crosta", false, "6,2", "blablabla");
